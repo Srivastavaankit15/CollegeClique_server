@@ -31,7 +31,7 @@ app.get('*', function(req, res){
 // })
 
 mongoose.connect(
-    process.env.MONGO_URI
+    "mongodb+srv://srivastavaankit221:srivastavaankit221@cluster0.e3lzjea.mongodb.net/"
     ).then(() => app.listen(port)).then(() => console.log("Connected to DataBase and listening to port")).catch((err) => (console.log(err)));
 
 // app.listen(port, () => {
